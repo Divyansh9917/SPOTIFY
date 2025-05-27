@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="spotify.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="icon" href="favicon.ico" type="image/favicon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav flex">
+            <div class="navleft flex">
+                <div class="hamburgerContainer">
+
+                    <img width="40" class="invert hamburger" src="img/hamburger.svg" alt="">
+                    
+                </div>
+
+                <div class="logo invert"><img src="img/logo.svg" alt="logo"></div>
+                <div class="home"><img src="img/home.svg" class="img invert" alt="home"></div>
+                <div class="placeholder flex">
+                    <div class="search">
+                        <img clas="invert" src="img/search.svg" alt="search">
+                    </div>
+                    <input type="text" placeholder="What do you want to play?" class="p1">
+                </div>
+            </div>
+            <div class="navright flex" id="navMenu">
+                <div class="button3 flex">
+                    <button class="b1">Premium</button>
+                    <button class="b1">Support</button>
+                    <button class="b1">Download</button>
+                </div>
+                <div class="line">|</div>
+                <div class="button2 flex">
+                    <button class="b1 ">
+                        <img src="img/install.svg" class="invert" alt="install">Install App</button>
+                    <button class="b1">Sign Up</button>
+                </div>
+                <div class="login flex">
+                    <button class="b2">Log in</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container2 flex">
+            <div class="left m p">
+                <div class="library">
+                    <div class="heading">
+                        <div class="lib flex">
+                            <img class="invert" src="img/playlist.svg" alt="playlist">
+                            <h2>
+                                Your Library
+                            </h2>
+                        </div>
+                        <div class="close">x</div>
+                    </div>
+
+                    <div class="songList">
+                        <ul>
+
+                        </ul>
+                        <ul>
+
+                        </ul>
+                    </div>
+
+                    <div class="footer flex m p ">
+                        <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                        <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                        <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                        </div>
+                        <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                        <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                        </div>
+                        <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right bg-grey m p">
+                <div class="trending">
+                    <h2>Trending Songs</h2>
+                    <div class="cardcont flex">
+
+                    </div>
+                </div>
+                <div class="popular">
+                    <h2>Popular Artist</h2>
+                    <div class="artistcont">
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="controls flex">
+            <div class="seekbar">
+                <div class="circle"></div>
+            </div>
+            <div class="abovebar flex">
+
+                <div class="songinfo">
+
+                </div>
+
+                <div class="songbuttons flex">
+                    <img width="35" class="invert" id="previous" src="img/prev.svg" alt="previous">
+                    <img width="35" class="invert" id="play" src="img/play.svg" alt="play">
+                    <img width="35" class="invert" id="next" src="img/next.svg" alt="next">
+                </div>
+
+                <div class="songtime">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <script src="spotify.js"></script>
+</body>
+
+</html>
