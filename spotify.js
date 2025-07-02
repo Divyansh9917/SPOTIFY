@@ -89,7 +89,7 @@ const playMusic = (filename, pause = false) => {
 
 async function displayAlbums() {
     console.log("Displaying albums...");
-    let a = await fetch(`/SPOTIFY/songs/`);
+    let a = await fetch(`/albums.json`);
     let response = await a.text();
 
     let div = document.createElement("div");
